@@ -14,7 +14,10 @@ public class Disparar : MonoBehaviour {
     float flashLightIntensity;
 
     MakeDamage mkdmg;
+
     public int balasEnCargador { get; private set; }
+
+    public bool reloading { get; private set; }
 
     int balasPorDisparo, balasPorMinuto, cargador;
     float tEmpezarDisparar, dispersion;
@@ -33,11 +36,13 @@ public class Disparar : MonoBehaviour {
         flashLightIntensity = flashLight.intensity;
 
         mkdmg = GetComponent<MakeDamage>();
+
+        reloading = false;
     }
 
     public void Empezar()
     {
-        if (balasEnCargador <= 0)
+        if (balasEnCargador <= 0 || reloading)
             return;
         if (automaticFire) InvokeRepeating("InstantiateBullet", tEmpezarDisparar, 60f / balasPorMinuto);
         else Invoke("InstantiateBullet", tEmpezarDisparar);
@@ -46,15 +51,14 @@ public class Disparar : MonoBehaviour {
     public void Parar()
     {
         CancelInvoke("InstantiateBullet");
-        stopMuzzleLight();
     }
 
     public void Recargar()
     {
-        if (flashLight.intensity == 0 || balasEnCargador == cargador)
+        if (reloading)
             return;
+        reloading = true;
         flashLight.intensity = 0;
-        balasEnCargador = 0;
         Parar();
         Invoke("Reload", reloadTime);
     }
@@ -83,6 +87,7 @@ public class Disparar : MonoBehaviour {
     {
         balasEnCargador = cargador;
         flashLight.intensity = flashLightIntensity;
+        reloading = false;
     }
 
     private void makeEffects()
@@ -105,7 +110,6 @@ public class Disparar : MonoBehaviour {
             if (Physics.Raycast(shootingPoint.position, dir, out hit, maxDistance)) {
                 mkdmg.damage(hit);
             }
-
         }
         --balasEnCargador;
         if(balasEnCargador == 0) {
@@ -113,9 +117,9 @@ public class Disparar : MonoBehaviour {
         }
     }
 
- 
     private void stopMuzzleLight()
     {
-        if (muzzleLight) muzzleLight.intensity = 0;
+        if (muzzleLight)
+            muzzleLight.intensity = 0;
     }
 }

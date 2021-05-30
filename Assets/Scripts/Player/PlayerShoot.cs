@@ -19,6 +19,8 @@ public class PlayerShoot : MonoBehaviour
 
     public void setWeapon(WeaponController wc_)
     {
+        if(wc) 
+            wc.Parar();
         wc = wc_;
     }
 }

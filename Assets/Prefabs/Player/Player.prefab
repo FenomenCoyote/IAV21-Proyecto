@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7097146971666376138}
   - component: {fileID: 7097146971666376139}
   - component: {fileID: 7097146971666376142}
+  - component: {fileID: 642484000}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 7097146971666376140}
   m_LocalRotation: {x: 0, y: 0.8248965, z: 0, w: 0.56528383}
   m_LocalPosition: {x: -29.96, y: 0.25, z: 9.02}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 1.4999999, y: 1.5, z: 1.4999999}
   m_Children:
   - {fileID: 7097146972123890366}
   - {fileID: 7097146972442623199}
@@ -135,7 +136,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a984b2ffea2afc640b6052c83effef63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 10
+  imPlayer: 1
+--- !u!143 &642484000
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7097146971666376140}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1
+  m_Radius: 0.50000006
+  m_SlopeLimit: 5
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7097146972123890365
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,6 +262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimumPoint: 200
   frecuency: 1
+  initialColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &7097146972442623198
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,11 +388,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8865494444327399789, guid: 06cab8e17879dfd4c921ea547d1b1cb8,
-        type: 3}
-      propertyPath: text
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06cab8e17879dfd4c921ea547d1b1cb8, type: 3}

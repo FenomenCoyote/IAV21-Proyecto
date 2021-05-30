@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class EnemyLife : MonoBehaviour
 {
-
     [SerializeField] float vida = 10f;
+
+    public bool touchedByLight { get; set; } = false;
 
     public float getLife() { return vida; }
 
