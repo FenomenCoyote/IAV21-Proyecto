@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelOver : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class LevelOver : MonoBehaviour
     {
         if(nexusPool.childCount <= 0)
         {
-            Application.Quit(0);
+            SceneManager.LoadScene("End");
         }
     }
 }
