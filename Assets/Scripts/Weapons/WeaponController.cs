@@ -14,7 +14,7 @@ public class WeaponController : MonoBehaviour
 
     void Start()
     {
-        if (GetComponent<Disparar>() != null) disp = GetComponent<Disparar>();
+        disp = GetComponent<Disparar>();
         disp.SetAtributosArma(balasPorDisparo, cargador, tEmpezarDisparar, balasPorMinuto, dispersion, automaticFire, reloadTime);
         t = Time.time;
     }
@@ -36,5 +36,15 @@ public class WeaponController : MonoBehaviour
     public void Recargar()
     {
         disp.Recargar();
+    }
+
+    public float getWeaponPercentage()
+    {
+        return (disp) ? disp.balasEnCargador / (float)cargador : 1f;
+    }
+
+    public bool reloading()
+    {
+        return disp.reloading;
     }
 }

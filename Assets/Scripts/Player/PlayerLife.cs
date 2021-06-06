@@ -12,7 +12,7 @@ public class PlayerLife : MonoBehaviour
         life -= damage;
         if (life <= 0.98) {
             if (imPlayer)
-                UnityEditor.EditorApplication.isPlaying = false;
+                Application.Quit(0);
             else
                 Destroy(this.gameObject);
         }
