@@ -36,6 +36,11 @@ _________
     - Bothering player  --> si el npc está en la línea de fuego del jugador, intenta apartarse
   
    ![Máquina de estados de movimiento](Assets/StateMachine/MovementEnd.png)
+   ![Diagrama de la máquina de estados de movimiento](Assets/StateMachine/MovementDiagram.png)
+   
+   >Explicacion del movimiento No Angle (Negro:NPC, Verde:Player, Morado:Enemigo)
+   >
+   >![Diagrama de moverse NoAngle](Assets/StateMachine/NoAngleMovementDiagram.png)
     _________
 
  
