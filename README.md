@@ -4,7 +4,7 @@ ________________________________________________________________________________
 ## _NPC Acompañante_
 > El proyecto se basa en un npc que acompaña al jugador a donde vaya, otorgándole apoyo y visión extra. El objetivo del juego es eliminar los 5 generadores de enemigos que hay en el nivel. 
 >
-> ![Imagen in-game](Assets/StateMachine/Game.PNG)
+> ![Imagen in-game](IAVFinal-CruzLopezDeOchoa/Assets/StateMachine/Game.PNG)
 
 El jugador se mueve con las teclas W, A, S, D, dispara y apunta con el ratón, recarga con la R y cambia de arma con la E. 
 
@@ -20,7 +20,7 @@ __________
     - Mira a ver si el jugador está recargando, para iluminar donde apunte el jugador
     - Selecciona un enemigo e intenta eliminarlo
 
- ![Arbol de comportamiento para apuntar](Assets/StateMachine/ShootingTreeEnd.PNG)
+ ![Arbol de comportamiento para apuntar](IAVFinal-CruzLopezDeOchoa/Assets/StateMachine/ShootingTreeEnd.PNG)
  
 _________
 
@@ -37,12 +37,12 @@ _________
 
    Existen auto-aristas para calcular cada x tiempo en vez de en cada tick
   
-   ![Máquina de estados de movimiento](Assets/StateMachine/MovementEnd.png)
-   ![Diagrama de la máquina de estados de movimiento](Assets/StateMachine/MovementDiagram.png)
+   ![Máquina de estados de movimiento](IAVFinal-CruzLopezDeOchoa/Assets/StateMachine/MovementEnd.png)
+   ![Diagrama de la máquina de estados de movimiento](IAVFinal-CruzLopezDeOchoa/Assets/StateMachine/MovementDiagram.png)
    
    >Explicacion del movimiento No Angle (Negro:NPC, Verde:Player, Morado:Enemigo)
    >
-   >![Diagrama de moverse NoAngle](Assets/StateMachine/NoAngleMovementDiagram.png)
+   >![Diagrama de moverse NoAngle](IAVFinal-CruzLopezDeOchoa/Assets/StateMachine/NoAngleMovementDiagram.png)
     _________
 
  
