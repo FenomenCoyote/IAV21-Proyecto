@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Game related
+/// </summary>
 public class PlayerWeaponController : MonoBehaviour
 {
     [SerializeField] KeyCode switchKey = KeyCode.E;

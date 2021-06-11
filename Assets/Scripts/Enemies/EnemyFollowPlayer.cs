@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+/// <summary>
+/// Game related
+/// Basic enemy ai that follow the player if it's in range
+/// </summary>
 public class EnemyFollowPlayer : MonoBehaviour
 {
     [SerializeField] float distanceToFollow = 10, timeToDespawn = 20;

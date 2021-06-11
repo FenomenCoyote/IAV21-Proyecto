@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Game related
+/// </summary>
 public class PlayerLife : MonoBehaviour
 {
     public float life { get; private set; } = 10.0f;

@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Game related
+/// Changes the light on the player to indicate player hp
+/// </summary>
 public class LightChanger : MonoBehaviour
 {
     [SerializeField] int minimumPoint = 200;

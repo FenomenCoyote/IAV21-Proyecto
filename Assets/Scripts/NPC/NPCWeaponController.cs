@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Game related
+/// </summary>
 public class NPCWeaponController : MonoBehaviour
 {
     public WeaponController wc { get; private set; }

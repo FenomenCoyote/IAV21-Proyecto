@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Game related
+/// Changes player cursor
+/// </summary>
 public class CursorManager : MonoBehaviour
 {
-
     [SerializeField] Texture2D tex;
     // Start is called before the first frame update
     void Start()

@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// AI related
+/// 
+/// Manager of movement when the npc is in danger
+/// Called from the movement state machine
+/// 
+/// </summary>
 public class DangerMovement : MonoBehaviour
 {
     [SerializeField] Transform player;
@@ -15,6 +22,10 @@ public class DangerMovement : MonoBehaviour
     [SerializeField] float bothering_angleMovement = 60f;
     [SerializeField] float bothering_angle = 15f;
 
+    /// <summary>
+    /// Imagen explicando este metodo en el readme.md
+    /// </summary>
+    /// <returns></returns>
     public Vector3 gainAnglePos()
     {
         if (!enemyExists || enemy == null || !ReferenceEquals(enemy, null))

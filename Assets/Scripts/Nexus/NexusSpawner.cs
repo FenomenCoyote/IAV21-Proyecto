@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Game related
+/// Spawns enemies
+/// </summary>
 public class NexusSpawner : MonoBehaviour
 {
     [SerializeField] EnemyFollowPlayer enemy;

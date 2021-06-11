@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+/// <summary>
+/// Game related
+/// </summary>
 public class NPCController : MonoBehaviour
 {
     NavMeshAgent agent;

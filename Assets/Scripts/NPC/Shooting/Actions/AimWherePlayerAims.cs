@@ -2,6 +2,12 @@ using UnityEngine;
 using BehaviorDesigner.Runtime;
 using BehaviorDesigner.Runtime.Tasks;
 
+/// <summary>
+/// AI related
+/// 
+/// Called from shooting behaviour tree
+///
+/// </summary>
 public class AimWherePlayerAims : Action
 {
     Transform player;

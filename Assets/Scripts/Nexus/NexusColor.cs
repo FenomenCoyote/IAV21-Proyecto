@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Game related
+/// Shows the nexus hp
+/// </summary>
 public class NexusColor : MonoBehaviour
 {
     EnemyLife life;

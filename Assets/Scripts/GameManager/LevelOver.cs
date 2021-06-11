@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Game related
+/// When all nexuses are destroyed, it changes scene
+/// </summary>
 public class LevelOver : MonoBehaviour
 {
     Transform nexusPool;

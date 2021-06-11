@@ -2,6 +2,13 @@ using UnityEngine;
 using BehaviorDesigner.Runtime;
 using BehaviorDesigner.Runtime.Tasks;
 
+/// <summary>
+/// AI related
+/// 
+/// Randomly looks after enemies
+/// Called from shooting behaviour tree
+/// 
+/// </summary>
 public class AimLookForEnemies : Action
 {
 	NPCController controller;

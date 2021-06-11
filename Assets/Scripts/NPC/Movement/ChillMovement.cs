@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+/// <summary>
+/// AI related
+/// 
+/// Manager of movement when the npc is chilling (no danger near)
+/// Called from the movement state machine
+/// 
+/// </summary>
 public class ChillMovement : MonoBehaviour
 {
     [SerializeField] Transform player;
@@ -23,6 +30,10 @@ public class ChillMovement : MonoBehaviour
         return player.position + offset;
     }
 
+    /// <summary>
+    /// Moves the npc around the player, but not straight towards the player (eso molestaria al jugador)
+    /// </summary>
+    /// <returns></returns>
     public Vector3 calculateAroundPos()
     {
         Vector3 dir = player.forward * -1f * patrolDistance;

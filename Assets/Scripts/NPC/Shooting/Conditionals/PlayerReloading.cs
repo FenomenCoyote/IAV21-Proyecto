@@ -2,6 +2,12 @@ using UnityEngine;
 using BehaviorDesigner.Runtime;
 using BehaviorDesigner.Runtime.Tasks;
 
+/// <summary>
+/// AI related
+/// 
+/// Called from the shooting behaviour tree
+/// 
+/// </summary>
 public class PlayerReloading : Conditional
 {
     PlayerWeaponController pController;

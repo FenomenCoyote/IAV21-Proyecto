@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Game related
+/// </summary>
 public class PlayerController : MonoBehaviour
 {
     private CharacterController controller;

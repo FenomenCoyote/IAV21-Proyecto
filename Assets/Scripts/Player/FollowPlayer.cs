@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Game related
+/// Camera to follow player
+/// </summary>
 public class FollowPlayer : MonoBehaviour
 {
     [SerializeField] Transform objectToFollow;

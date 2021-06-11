@@ -4,6 +4,12 @@ using BehaviorDesigner.Runtime.Tasks;
 using System.Collections;
 using System.Collections.Generic;
 
+/// <summary>
+/// AI related
+/// 
+/// Called from the shooting behaviour tree
+/// 
+/// </summary>
 public class SelectTargetEnemy : Action
 {
 	private Transform enemiesPool;
