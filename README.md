@@ -34,6 +34,8 @@ _________
     - Group up  --> se acerca mucho al jugador
     - No angle  --> el npc no puede disparar al enemigo que tiene como Target, por lo que se reposiciona para ganar vision
     - Bothering player  --> si el npc está en la línea de fuego del jugador, intenta apartarse
+
+   Existen auto-aristas para calcular cada x tiempo en vez de en cada tick
   
    ![Máquina de estados de movimiento](Assets/StateMachine/MovementEnd.png)
    ![Diagrama de la máquina de estados de movimiento](Assets/StateMachine/MovementDiagram.png)
