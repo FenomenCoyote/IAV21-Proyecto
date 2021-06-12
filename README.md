@@ -1,7 +1,13 @@
-# IA Proyecto 
+# IA Proyecto: _NPC Acompañante_
 _Javier Cruz López De Ochoa_
 ____________________________________________________________________________________________________________________________
-## _NPC Acompañante_
+
+### Video (https://drive.google.com/file/d/1oPWveCTL3JzZUlTagVUKiiaOYyrG5Xmd/view?usp=sharing)
+
+### Build (https://drive.google.com/file/d/1achFo-bgYNWw8VQwDTI3vqcqLfISoMKT/view?usp=sharing)
+
+____________________________________________________________________________________________________________________________
+
 > El proyecto se basa en un npc que acompaña al jugador a donde vaya, otorgándole apoyo y visión extra. El objetivo del juego es eliminar los 5 generadores de enemigos que hay en el nivel. 
 >
 > ![Imagen in-game](IAVFinal-CruzLopezDeOchoa/Assets/StateMachine/Game.PNG)
